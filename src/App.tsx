@@ -2,6 +2,7 @@
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { CounterPractice } from './components/practices/counterPractice';
+import { UserPractice } from './components/practices/userPractice';
 
 //Components
 
@@ -12,6 +13,7 @@ const App = () => {
         <Box bgcolor="primary.main" color="info.contrastText" >
           <h1 color="text.primary" > Hola mundo - Ts 🚀 </h1>
           <CounterPractice />
+          <UserPractice />
         </Box>
       </Grid>
     </Grid>
