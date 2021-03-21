@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import { CounterPractice } from './components/practices/counterPractice';
+
+//Components
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container spacing={1} className="App">
+      <Grid item xs={12} sm={12}>
+        <Box bgcolor="primary.main" color="info.contrastText" >
+          <h1 color="text.primary" > Hola mundo - Ts 🚀 </h1>
+          <CounterPractice />
+        </Box>
+      </Grid>
+    </Grid>
+
   );
 }
 
