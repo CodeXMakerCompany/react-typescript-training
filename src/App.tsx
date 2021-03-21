@@ -4,7 +4,7 @@ import Box from '@material-ui/core/Box';
 import { CounterPractice } from './components/practices/counterPractice';
 import { UserPractice } from './components/practices/userPractice';
 import { ParentTimer } from './components/practices/parentTimerPractice';
-
+import { ReducerCounter } from "./components/practices/useReducer/reducerCounter";
 //Components
 
 const App = () => {
@@ -19,6 +19,8 @@ const App = () => {
           <h3>useEffect - useRef</h3>
           <br />
           <ParentTimer />
+          <br />
+          <ReducerCounter />
         </Box>
       </Grid>
     </Grid>
