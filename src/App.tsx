@@ -5,7 +5,10 @@ import { CounterPractice } from './components/practices/counterPractice';
 import { UserPractice } from './components/practices/userPractice';
 import { ParentTimer } from './components/practices/parentTimerPractice';
 import { ReducerCounter } from "./components/practices/useReducer/reducerCounter";
+import { Page1 } from './components/practices/contextApi/page1';
+import { Page2 } from './components/practices/contextApi/page2';
 //Components
+import { DataProvider } from "./components/practices/contextApi/DataContext";
 
 const App = () => {
   return (
@@ -20,7 +23,16 @@ const App = () => {
           <br />
           <ParentTimer />
           <br />
+          <h3>useReducer</h3>
           <ReducerCounter />
+
+          <DataProvider>
+            <h3>conextApi</h3>
+            <Page1 />
+            <Page2 />
+
+          </DataProvider>
+
         </Box>
       </Grid>
     </Grid>
